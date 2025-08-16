@@ -1,69 +1,66 @@
-# Markdown syntax guide
+# FOR LOOPS IN C 
+###### This repo contains a simple example of for loops i c  and some of its appplications
 
-## Headers
 
-# This is a Heading h1
-## This is a Heading h2
-###### This is a Heading h6
 
-## Emphasis
 
-*This text will be italic*  
-_This will also be italic_
 
-**This text will be bold**  
-__This will also be bold__
 
-_You **can** combine them_
 
-## Lists
+## for loop
 
-### Unordered
+#### for loops are used when we want to execute a block of code fixed number of times with a given condition.
 
-* Item 1
-* Item 2
-* Item 2a
-* Item 2b
-    * Item 3a
-    * Item 3b
+## structure  of a for loop
 
-### Ordered
+#####  a for loop contains 3 main parts which include : initialization , condition and loop/ update.
 
-1. Item 1
-2. Item 2
-3. Item 3
-    1. Item 3a
-    2. Item 3b
-
-## Images
-
-![This is an alt text.](/image/sample.webp "This is a sample image.")
-
-## Links
-
-You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
-
-## Blockquotes
-
-> Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.
->
->> Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
-
-## Tables
-
-| Left columns  | Right columns |
-| ------------- |:-------------:|
-| left foo      | right foo     |
-| left bar      | right bar     |
-| left baz      | right baz     |
-
-## Blocks of code
-
-```
-let message = 'Hello world';
-alert(message);
+```c
+for (initialization; condition; update) {
+    // statements to execute
+}
 ```
 
-## Inline code
+### initialization of a for loop
 
-This web site is using `markedjs/marked`.
+## int i = 0;
+
+* here i  have initialized a iterator named " i " which only runs once and is responsible for setting a starting value of a loop. For instance i've initialized a iterator "i" as 0.
+### conditions in a for loop 
+
+## i < 5;
+
+* now ive given a condition , which runs after the iteration and it changes the loop variable so the loop can keep moving.
+* as the condition given is i < 5 , which defines the loop that it should keep moving till it reaches 4.
+
+
+###  increment / decrement or update in a for loop
+
+## i++;
+
+* this part is the most important  , as it describes the way in which a loop should be running. 
+
+* i++ means that the value of i (starting from 0) increases by 1 in each iteration, until it reaches 4 (since the condition i < 5 must be true).
+
+### code :
+```C 
+#include <stdio.h>
+
+int main() {
+    for (int i = 0; i < 5; i++) {
+        printf("Value of i: %d\n", i);
+    }
+    return 0;
+}
+```
+
+### output :
+```C 
+Value of i: 0
+Value of i: 1
+Value of i: 2
+Value of i: 3
+Value of i: 4
+```
+
+
